@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Drum Kit</title>
+    <link rel="stylesheet" href="styles-drumkit.css">
+    <link rel="icon" href="images/drum-favicon.png" type="image/png">
+</head>
+<body>
+
+<div class="keys">
+    <div data-key="KeyA" class="key">
+        <kbd>A</kbd>
+        <span class="sound">drum</span>
+    </div>
+    <div data-key="KeyS" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hi-hat</span>
+    </div>
+    <div data-key="KeyD" class="key">
+       <kbd>D</kbd>
+        <span class="sound">clap</span>
+    </div>
+    <div data-key="KeyF" class="key">
+        <kbd>F</kbd>
+        <span class="sound">kick</span>
+    </div>
+    <div data-key="KeyG" class="key">
+        <kbd>G</kbd>
+        <span class="sound">open hat</span>
+    </div>
+    <div data-key="KeyH" class="key">
+        <kbd>H</kbd>
+        <span class="sound">snare</span>
+    </div>
+    <div data-key="KeyJ" class="key">
+        <kbd>J</kbd>
+        <span class="sound">tom roll</span>
+    </div>
+    <div data-key="KeyK" class="key">
+        <kbd>K</kbd>
+        <span class="sound">snap</span>
+    </div>
+</div>
+    
+<!--to avoid delay in the audio, files were converted to MP3 format and 'preload="auto' was added-->
+<audio data-key="KeyA" src="sounds/drum.mp3" preload="auto"></audio>
+<audio data-key="KeyS" src="sounds/hi-hat.mp3" preload="auto"></audio>
+<audio data-key="KeyD" src="sounds/clap.mp3" preload="auto"></audio>
+<audio data-key="KeyF" src="sounds/kick.mp3" preload="auto"></audio>
+<audio data-key="KeyG" src="sounds/open hat.mp3" preload="auto"></audio>
+<audio data-key="KeyH" src="sounds/snare.mp3" preload="auto"></audio>
+<audio data-key="KeyJ" src="sounds/tom roll.mp3" preload="auto"></audio>
+<audio data-key="KeyK" src="sounds/snap.mp3" preload="auto"></audio>
+
+<script src="drumkit-script.js"></script>
+    
+</body>
+</html>
